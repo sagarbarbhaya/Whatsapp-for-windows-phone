@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="App1.Location_messaging"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBox x:Name="tb1" HorizontalAlignment="Left" Opacity="1" Margin="22,533,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220"/>
+        <Button x:Name="btn1" Content="SEND" Opacity="1" HorizontalAlignment="Left" Margin="268,518,0,0" VerticalAlignment="Top" Tapped="btn1_Click"/>
+        <TextBox x:Name="mesg" Opacity="1" HorizontalAlignment="Left" Margin="25,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="359" Height="413" IsReadOnly="True" TextChanged="mesg_TextChanged"/>
+        <TextBlock x:Name="label" Opacity="1" HorizontalAlignment="Left" Margin="89,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" SelectionChanged="label_SelectionChanged" Height="43" FontSize="22.5"/>
+
+    </Grid>
+</Page>

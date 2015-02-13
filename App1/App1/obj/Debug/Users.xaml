@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="App1.Users"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="User">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+
+        </Grid.RowDefinitions>
+
+
+        <ComboBox x:Name="com" HorizontalAlignment="Left" Margin="65,13,0,0" VerticalAlignment="Top" Width="203" Height="51">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock x:ConnectionId='3' Text="{Binding fName}" Tag="{Binding femail}"                          />
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+
+        <TextBox  x:Name="send" Opacity="0" HorizontalAlignment="Left" Margin="22,513,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="215"/>
+        <Button x:ConnectionId='1' x:Name="Sendbtn" Content="Send" Opacity="0" HorizontalAlignment="Left" Margin="242,503,0,0" VerticalAlignment="Top"                        />
+        <TextBox x:ConnectionId='2' x:Name="mes" IsReadOnly="True" Opacity="0" HorizontalAlignment="Left" Margin="10,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="369" Height="386"                              />
+
+    </Grid>
+</Page>
+
